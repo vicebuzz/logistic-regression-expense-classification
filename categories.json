@@ -1,0 +1,27 @@
+{
+    "categories": {
+        "outflow": [
+            "Groceries",
+            "Food",
+            "Bills",
+            "Transport",
+            "Entertainment",
+            "Education",
+            "Presents",
+            "Other",
+            "Shopping",
+            "Health&Hygiene",
+            "Travel&Tourism",
+            "Savings",
+            "Sports&Activities"
+        ],
+        "inflow": [
+            "Deposit",
+            "Wages",
+            "University",
+            "Savings Account",
+            "Other",
+            "Help Funds"
+        ]
+    }
+}
