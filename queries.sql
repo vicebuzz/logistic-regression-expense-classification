@@ -1,3 +1,6 @@
+
+-- Queries for analysis and visualisation of user expenses
+
 CREATE EXTENSION tablefunc;
 SELECT * 
 FROM crosstab(
