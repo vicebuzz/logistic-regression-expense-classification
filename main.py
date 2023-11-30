@@ -80,5 +80,18 @@ def main(filename):
                 conn.commit()
 
 
+def dump_expenses():
+    
+    cur.execute('SELECT * FROM accountbalancemanagement WHERE change_id > 101 AND expenditure = true ORDER BY change_id')
+
+    with open('expenses.csv', 'w') as csvfile:
+        fieldnames = ['description', 'category']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for record in cur:
+            writer.writerow({'description':record[4],'category':record[2]})
+    
+
 if __name__ == '__main__':
-    main('transactions5')
+    #main('transactions5')
+    dump_expenses()
